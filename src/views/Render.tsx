@@ -9,7 +9,7 @@ export function Render() {
   const subscribeSubtitleEffect = () => {
     store()
       .application.subscribe("subtitle", (value) => {
-        setSubtitle(value);
+        setSubtitle(value as any);
       })
       .catch(console.error);
   };
