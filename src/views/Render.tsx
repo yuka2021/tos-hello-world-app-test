@@ -16,11 +16,12 @@ export function Render() {
   useEffect(subscribeSubtitleEffect, []);
 
   return (
-    <div className="render">
+    <div className="render" style={{ backgroundColor: "blue" }}>
       <div className="render__hero">
         <div className="render__hero-logo">
           <img src={amberLogoPath} alt="TelemetryOS" />
         </div>
+        <h1>Hello World -Render-</h1>
         <div className="render__hero-title">Hello from TelemetryOS!</div>
         <div className="render__hero-subtitle">{subtitle}</div>
       </div>
